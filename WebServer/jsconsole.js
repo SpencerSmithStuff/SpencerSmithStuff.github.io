@@ -66,10 +66,10 @@ execute.innerHTML="Execute";
 cnsdonestr=donewords.join(' ');
 cnsdone.innerHTML=cnsdonestr;
 
-form.style="z-index: 996; border: 5px solid black; outline: none; background-color: #3d3d3d; resize: none; float: right; padding: 0; margin: 0 auto; bottom: 0; left: 0; right: 0; position: fixed; height: 40%; width: 95%;";
-execute.style="z-index: 999; border-color: gray; background-color: gray; right: 2.6%; float: right; margin: 0; margin-bottom: 0.5%; bottom: 0; padding: 0; position: fixed;";
-cns.style="z-index: 997; border: none; outline: none; background-color: #3d3d3d; resize: none; float: right; padding: 0; margin: 0 auto; bottom: 0; overflow: auto; position: fixed; height: 30%; width: 95%; color: white;";
-cnsdone.style="z-index: 998; border: none; border-bottom: 2px solid #303030; outline: none; background-color: #3d3d3d; resize: none; padding: 0; float: right; margin: 0 auto; bottom: 30%; overflow: auto; position: fixed; height: 10%; width: 95%; color: green"
+form.style="!important; z-index: 9996; border: 5px solid black; outline: none; background-color: #3d3d3d; resize: none; float: right; padding: 0; margin: 0 auto; bottom: 0; left: 0; right: 0; position: fixed; height: 40%; width: 95%;";
+execute.style="!important; z-index: 9999; border-color: gray; background-color: gray; right: 2.6%; float: right; margin: 0; margin-bottom: 0.5%; bottom: 0; padding: 0; position: fixed;";
+cns.style="!important; z-index: 9997; border: none; outline: none; background-color: #3d3d3d; resize: none; float: right; padding: 0; margin: 0 auto; bottom: 0; overflow: auto; position: fixed; height: 30%; width: 95%; color: white;";
+cnsdone.style="!important; z-index: 9998; border: none; border-bottom: 2px solid #303030; outline: none; background-color: #3d3d3d; resize: none; padding: 0; float: right; margin: 0 auto; bottom: 30%; overflow: auto; position: fixed; height: 10%; width: 95%; color: green"
 
 form.appendChild(cns);
 form.appendChild(cnsdone);
