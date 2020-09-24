@@ -36,6 +36,11 @@ form.autocapitalize="off";
 form.spellcheck=false;
 execute.id = "execute";
 exit.id = "exit";
+
+function close() {
+    document.getElementById("consoleDiv").remove();
+}
+
 function run() {
   cspEval(document.getElementsByName('console')[0].value); //run the code
 
@@ -84,6 +89,7 @@ form.appendChild(execute);
 form.appendChild(exit);
 document.body.append(form);
 document.getElementById("execute").addEventListener("click", run);
+document.getElementById("exit").addEventListener("click", close);
 // setInterval(function(){
 //   words=document.getElementsByName('console')[0].value.split(/[\s.]+/);
 //   for(i = 0; i < words.length(); i++){
