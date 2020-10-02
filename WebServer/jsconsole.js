@@ -49,7 +49,7 @@ function run() {
   for(i=almostdonewords.length-1; i>=0; i--){
     letterarray=almostdonewords[i].split("");
     for(j=0; j<letterarray.length; j++){
-      if(letterarray[j]==";"){
+      if(letterarray[j]==";" || letterarray[j]=="{" || letterarray[j]=="}"){
         almostdonewords.splice(i+1,0,"\n");
       }
     }
